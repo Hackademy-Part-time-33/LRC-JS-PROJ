@@ -1,0 +1,139 @@
+* {
+    font-family: "DM Sans", sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* main {
+    overflow-y: hidden;
+} */
+
+.navbar-toggler-icon {
+    color: var(--white) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.title-act {
+    font-family: "Marcellus", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+:root {
+    --black: rgb(26, 26, 26);
+    --white: rgb(250, 250, 250);
+
+}
+
+.bg-black {
+    background-color: var(--black);
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+.txt-black {
+    background-color: var(--black);
+
+}
+
+
+.txt-white {
+    background-color: var(--white);
+
+}
+
+.nav-costum {
+    background-color: var(--white);
+    height: 80px;
+    width: 100%;
+    transition: 0.5s;
+}
+
+/*css scroll*/
+
+.nav-blur {
+    backdrop-filter: blur(5px) saturate(0.8);
+    background: rgba(45, 45, 46, 0.9);
+}
+
+header {
+    height: 100vh;
+    width: auto;
+    background: linear-gradient(rgb(250, 250, 250), rgba(250, 250, 250, 0.0)), url(./media/header_act.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 80px;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+}
+
+.btn-custom {
+    z-index: 1;
+    position: relative;
+    justify-content: center;
+    transition: all 250ms;
+    overflow: hidden;
+    border-color: none;
+}
+
+.btn-custom::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0px;
+    border-radius: 10px;
+    background-color: rgb(157, 110, 105);
+    z-index: -1;
+    transition: all 250ms;
+}
+
+.btn-custom:hover {
+    color: black;
+}
+
+.btn-custom:hover::before {
+    width: 100%;
+}
+
+.presentation {
+    text-align: left;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.numbers {
+    font-size: 35px;
+    color: rgb(100, 69, 67);
+    font-weight: bold;
+    -webkit-text-stroke: 1px ivory;
+}
+
+.hNum {
+    font-size: 50px;
+}
